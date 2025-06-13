@@ -17,5 +17,4 @@ ENV PORT=${PORT:-8000}
 EXPOSE $PORT
 
 # 使用 Hypercorn 运行应用
-# 使用 ls -la /app 来查看目录内容，用于调试
-CMD ["ls", "-la", "/app"]
+CMD ["python", "app.py"]
