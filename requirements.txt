@@ -1,0 +1,9 @@
+camoufox==0.4.11
+fastapi==0.115.12
+hypercorn==0.17.3
+patchright==1.52.5
+pydantic==2.11.5
+quart==0.20.0
+Requests==2.32.4
+uvicorn==0.34.3
+websocket_client==1.8.0
