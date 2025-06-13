@@ -13,7 +13,7 @@ COPY . .
 
 # 暴露应用端口
 # Hugging Face Spaces 通常期望应用监听 7860 端口，但我们将使其可配置
-ENV PORT=${PORT:-7860}
+ENV PORT=${PORT:-8000}
 EXPOSE $PORT
 
 # 使用 Hypercorn 运行应用
