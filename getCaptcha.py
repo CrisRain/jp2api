@@ -2,7 +2,7 @@ import requests
 import time
 
 def getTaskId():
-    url = "http://turnstile_solver:5000/turnstile?url=https://tenbin.ai/workspace&sitekey=0x4AAAAAABGR2exxRproizri&action=issue_execution_token"
+    url = "http://127.0.0.1:5000/turnstile?url=https://tenbin.ai/workspace&sitekey=0x4AAAAAABGR2exxRproizri&action=issue_execution_token"
 
     response = requests.get(url)
     response.raise_for_status()
@@ -10,7 +10,7 @@ def getTaskId():
 
 def getCaptcha(task_id):
 
-    url = f"http://turnstile_solver:5000/result?id={task_id}"
+    url = f"http://127.0.0.1:5000/result?id={task_id}"
     
     while True:
         try:
